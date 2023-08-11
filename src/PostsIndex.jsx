@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 // make label tags
 export function PostsIndex(props) {
   console.log(props);
@@ -8,7 +9,7 @@ export function PostsIndex(props) {
         <div key={post.id} className="posts">
           <h2>{post.title}</h2>
           <img src={post.image} alt={post.title} />
-          <button>More Info</button>
+          <button onClick={() => props.onShowPost(post)}>More info</button>
         </div>
       ))}
     </div>
