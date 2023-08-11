@@ -1,7 +1,15 @@
+#root { 
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  
+  background-image: url('assets/asanoha-400px.png');
+  }
+
+
 #posts-index img {
   width: 300px;
-}
+};
 
 html {
   scroll-behavior: smooth;
-}
+};
+

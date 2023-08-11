@@ -31,12 +31,14 @@ export function Content() {
   useEffect(handleIndexPosts, []);
 
   return (
-    <div id="content-component">
-      <PostsNew />
-      <PostsIndex posts={posts} onShowPost={handleShowPost} />
-      <Modal show={isPostsShowVisible} onClose={handleClose}>
-        <PostsShow post={currentPost} />
-      </Modal>
+    <div className="container">
+      <div id="content-component">
+        <PostsNew />
+        <PostsIndex posts={posts} onShowPost={handleShowPost} />
+        <Modal show={isPostsShowVisible} onClose={handleClose}>
+          <PostsShow post={currentPost} />
+        </Modal>
+      </div>
     </div>
   );
 }
