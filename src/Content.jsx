@@ -5,6 +5,8 @@ import { PostsIndex } from "./PostsIndex";
 import { Modal } from "./Modal";
 import { PostsShow } from "./PostsShow";
 import { Signup } from "./signup";
+import { Login } from "./Login";
+import { LogoutLink } from "./LogoutLink";
 
 export function Content() {
   // let posts = [];
@@ -35,6 +37,8 @@ export function Content() {
     <div className="container">
       <div id="content-component">
         <Signup />
+        <Login />
+        <LogoutLink />
         <PostsNew />
         <PostsIndex posts={posts} onShowPost={handleShowPost} />
         <Modal show={isPostsShowVisible} onClose={handleClose}>
