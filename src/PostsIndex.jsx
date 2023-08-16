@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-// make label tags
 export function PostsIndex(props) {
   console.log(props);
   return (
