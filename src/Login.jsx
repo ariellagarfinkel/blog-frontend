@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
+// import { LogoutLink } from "./LogoutLink";
 
 const jwt = localStorage.getItem("jwt");
 if (jwt) {
@@ -45,6 +46,7 @@ export function Login() {
         </div>
         <button type="submit">Login</button>
       </form>
+      {/* <LogoutLink /> */}
     </div>
   );
 }

@@ -15,7 +15,7 @@ export function PostsShow(props) {
       <h1>Title: {props.post.title}</h1>
       <p>Description: {props.post.body}</p>
       <div id="posts-new">
-        <h1>New post</h1>
+        <h1>Post Info</h1>
         <form onSubmit={handleSubmit}>
           <div>
             Title: <input defaultValue={props.post.title} name="title" type="text" />

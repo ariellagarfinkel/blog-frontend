@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { LogoutLink } from "./LogoutLink";
 
 export function Header() {
   return (
@@ -24,10 +25,8 @@ export function Header() {
               <li className="nav-item">
                 <Link to="/about">About</Link>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Link
-                </a>
+              <li>
+                <LogoutLink />
               </li>
               <li className="nav-item dropdown">
                 <a
@@ -37,7 +36,7 @@ export function Header() {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Dropdown
+                  More Stuff
                 </a>
                 <ul className="dropdown-menu">
                   <li>
@@ -53,11 +52,9 @@ export function Header() {
                   <li>
                     <hr className="dropdown-divider" />
                   </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Something else here
-                    </a>
-                  </li>
+                  {/* <li>
+                    <LogoutLink />
+                  </li> */}
                 </ul>
               </li>
               <li className="nav-item">
