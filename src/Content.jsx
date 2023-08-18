@@ -9,6 +9,8 @@ import { PostsShow } from "./PostsShow";
 import { Signup } from "./signup";
 import { Login } from "./Login";
 import { LogoutLink } from "./LogoutLink";
+import { MyCalendar } from "./Calendar";
+import "react-calendar/dist/Calendar.css";
 
 export function Content() {
   // let posts = [];
@@ -75,7 +77,9 @@ export function Content() {
         <Route path="/login" element={<Login />} />
         <Route path="/posts/new" element={<PostsNew onCreatePost={handleCreatePost} />} />
         <Route path="/" element={<PostsIndex posts={posts} onShowPost={handleShowPost} />} />
+        <Route path="/calendar" element={<MyCalendar />} />
       </Routes>
+
       <div id="content-component">
         {/* <Signup /> */}
         {/* <Login /> */}
